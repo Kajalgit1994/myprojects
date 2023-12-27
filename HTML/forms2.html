@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/form2.css">
+</head>
+<body>
+    <form action="./index.html" method="get">
+    <div class="inner">
+        <h1>College Application Form</h1><br>
+        <label for="Name">Name</label>
+        <br>
+        <select name="Title" id="name">
+            <option value="MS">MS</option>
+            <option value="MiSS">MiSS</option>
+            <option value="MrS">MrS</option>
+            <option value="Mr">Mr</option>
+        </select>
+        
+        <input type="text" id="fname" placeholder="FirstName" required><label>*</label>
+        <input type="text" id="fname" placeholder="Middle Name">
+        <input type="text" id="fname" placeholder="LastName"><br><br>
+        <label for="Date" id="date">Date Of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="phone" id="phone" style="padding-left: 10px;">Phone</label><br>
+        <input type="date" name="DOB">&nbsp;&nbsp;&nbsp;
+        <input type="text" name="phone"><br><br>
+        <label for Address >Home Address</label><br>
+        <textarea id="Address" placeholder="Street Address"></textarea><br>
+        <input type="text" name="city" placeholder="city">
+        <select name="State" id="state">
+            <option value="State">State</option>
+            <option value="Mh">Maharashtra</option>
+            <option value="MiSS">X</option>
+            <option value="MrS">Y</option>
+            <option value="Mr">Z</option>
+        </select><br><br>
+        <input type="text" name="Zipcode" placeholder="Zipcode">
+        <input type="Country" name="Country" placeholder="Country"><br><br>
+        <label for email>Email</label><br>
+        <input type="Email" name="email"><br><br>
+        <label for course>Please select the Course you would like to attend</label><br>
+
+        <input type="checkbox" id="course1" name="scales" />
+        <label for course>Course1</label>
+    
+        <input type="checkbox" id="course2" name="scales" />
+        <label for course>Course2</label>
+
+        <input type="checkbox" id="course3" name="scales" />
+        <label for course>Course3</label>
+    
+        <input type="checkbox" id="course4" name="scales" />
+        <label for course>Course4</label><br><br>
+        
+        <input type="submit" value="submit" class="button" >
+    </div>
+</form>
+</body>
+</html>

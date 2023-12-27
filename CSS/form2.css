@@ -1,0 +1,33 @@
+.inner
+{
+    border: 1px solid black;
+    padding-left: 12px;
+    background-color: aqua;
+    padding-top: 5%;
+    padding-bottom:5%;
+    width: 700px;
+    margin-left: 350px;
+    
+}
+.outer
+{
+    text-align: center;
+    border: 1px solid black;
+}
+
+label
+{
+    align-items: start;
+    text-align: right;
+    width:20px;
+}
+#fname
+{
+    height:30px;
+    
+}
+#phone
+{
+    width:20px
+}
+
