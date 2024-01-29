@@ -1,0 +1,40 @@
+.outer
+{
+  
+   border:1px solid black;
+    width: 500px;
+    height:500px;
+   
+    
+}
+.inner
+{
+    border:1px solid black;
+    height: 200px;
+    width:200px;
+    border-radius: 100px;
+   
+    margin-left:50px;
+    margin-top: 20px;
+  
+    /* background-color: blue; */
+   /* left: 0;
+    position: relative;
+    transition: left ease 10s; */
+
+    
+}
+/* .inner:hover{
+    
+    left: 100px;
+  
+    
+} */
+#img
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+ 
+}
+
