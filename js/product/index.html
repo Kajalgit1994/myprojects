@@ -44,7 +44,7 @@ function init()
             price.textContent=pro.price;
           image.src=pro.images[0];
             product.classList.add('product')
-            product.append(image, title,price)
+            product.append(image,title,price)
         
             mainDiv.appendChild(product)
         });
@@ -59,26 +59,17 @@ function init()
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 10px;
-            align-items: center;
         }
         .product
         {
            height: 400px;
            width: 300px;
            box-shadow: 5px 5px 8px black;
-           
         }
-        .product:hover
-{
-    transform: scale(1.1);
-    background-color: aqua;
- 
-}
         .product img
         {
             height: 200px;
             width: 200px;
-            align-content: center;
         }
 </style>
 <body>

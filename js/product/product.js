@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        window.onload=init;
+window.onload=init()
 function init()
 {
     mainDiv=document.getElementById('products')
@@ -38,52 +31,15 @@ function init()
         {
             const product=document.createElement('div')
             const title=document.createElement('p')
-            const image=document.createElement('img')
+           // const image=document.createElement('img')
             const price=document.createElement('p')
             title.textContent=pro.title;
             price.textContent=pro.price;
-          image.src=pro.images[0];
+          // image.src=pro.images[0];
             product.classList.add('product')
-            product.append(image, title,price)
+            product.append(title,price)
         
             mainDiv.appendChild(product)
         });
 
     }
-
-    </script>
-</head>
-<style>
-    #products
-        {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-            align-items: center;
-        }
-        .product
-        {
-           height: 400px;
-           width: 300px;
-           box-shadow: 5px 5px 8px black;
-           
-        }
-        .product:hover
-{
-    transform: scale(1.1);
-    background-color: aqua;
- 
-}
-        .product img
-        {
-            height: 200px;
-            width: 200px;
-            align-content: center;
-        }
-</style>
-<body>
-  <div id="products">
-
-  </div>  
-</body>
-</html>
