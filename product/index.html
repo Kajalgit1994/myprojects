@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        window.onload=init;
+   
+</head>
+<script>
+ window.onload=init;
 function init()
 {
     mainDiv=document.getElementById('products')
@@ -21,18 +23,9 @@ function init()
     })
 
 }
-//const mainDiv=document.getElementById('products')
 
-/*fetch("https://dummyjson.com/products")
-    .then(function (p) {
-        console.log(p)
-        return p.json()
-    })
-    .then(function(x){
-        console.log(x)
-        displayData(x)
-    })*/
-    function displayData (data)
+
+function displayData (data)
     {
         data.products.forEach(function (pro)
         {
@@ -44,15 +37,17 @@ function init()
             price.textContent=pro.price;
           image.src=pro.images[0];
             product.classList.add('product')
-            product.append(image, title,price)
+            product.append(image,title,price)
         
             mainDiv.appendChild(product)
         });
 
     }
+</script>
 
-    </script>
-</head>
+
+
+
 <style>
     #products
         {
@@ -63,9 +58,19 @@ function init()
         }
         .product
         {
-           height: 400px;
-           width: 300px;
-           box-shadow: 5px 5px 8px black;
+           
+            height:350px;
+            width: 350px;
+            box-shadow: 5px 5px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 10px; 
+            background-color:beige;
+            color:black;
+    
            
         }
         .product:hover
